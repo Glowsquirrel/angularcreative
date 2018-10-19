@@ -4,7 +4,7 @@ function ExpenseController($scope){
         {
             name: 'Tuition',
             price: 3000,
-            active:true
+            active:false
         },{
             name: 'Housing',
             price: 2000,

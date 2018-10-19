@@ -10,6 +10,7 @@
         <script src="app.js"></script> 
     </head>
         
+    <body>
         <form ng-app ng-controller="ExpenseController">
         
             <h1>Expenses</h1>
@@ -26,7 +27,7 @@
         
         </form>
         
-        <form ng-submit="addItem()" style="margin-top:30px;"> 
+        <form ng-submit="addItem()" ng-app ng-controller="ExpenseController" style="margin-top:30px;"> 
             <h3>Add a new expense</h3> 
             <div class="form-group"> 
                 <input type="text" class="form-control" placeholder="expense" ng-model="newservice"></input> 
@@ -34,5 +35,6 @@
             </div> 
             <button type="submit" class="btn btn-primary">Add</button> 
         </form> 
+    </body>
 
 </html>
